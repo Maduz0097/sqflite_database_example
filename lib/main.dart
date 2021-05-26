@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:sqflite_database_example/model/MT1.dart';
+import 'package:sqflite_database_example/page/edit_MT1_page.dart';
+import 'package:sqflite_database_example/page/mt1_page.dart';
 import 'package:sqflite_database_example/page/notes_page.dart';
 
 Future main() async {
@@ -13,7 +16,7 @@ Future main() async {
 }
 
 class MyApp extends StatelessWidget {
-  static final String title = 'Notes SQLite';
+  static final String title = 'Point Data Collector v1.0';
 
   @override
   Widget build(BuildContext context) => MaterialApp(
@@ -28,6 +31,6 @@ class MyApp extends StatelessWidget {
             elevation: 0,
           ),
         ),
-        home: NotesPage(),
+        home: MT1_Page(),
       );
 }
